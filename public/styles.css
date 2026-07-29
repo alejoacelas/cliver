@@ -33,9 +33,10 @@ footer {
 .site-header nav { display: flex; align-items: center; gap: 22px; }
 .wordmark { font-size: 20px; font-weight: 750; letter-spacing: -0.04em; text-decoration: none; }
 .highlight {
-  padding: 0 0.08em;
+  padding: 0.08em 0.12em;
+  border-radius: 0.04em;
   color: inherit;
-  background: linear-gradient(transparent 56%, var(--highlight) 56%);
+  background: var(--highlight);
 }
 .quiet-link { color: var(--muted); font-size: 14px; }
 .header-button {
