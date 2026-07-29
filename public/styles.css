@@ -167,6 +167,11 @@ h1 {
 .resource-grid a:hover { border-color: var(--accent); transform: translateY(-2px); }
 .resource-grid span { color: var(--accent); font-size: 11px; font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; }
 .resource-grid strong { margin-top: auto; font-size: 17px; line-height: 1.35; }
+.people-section { padding-bottom: 70px; }
+.people-section .section-heading { margin-bottom: 30px; }
+.people-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; max-width: 900px; }
+.people-grid p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
+.people-grid strong { color: var(--ink); }
 .closing-section { padding: 100px 0 20px; border-top: 1px solid var(--line); }
 .closing-section h2 { margin-bottom: 30px; }
 
@@ -316,7 +321,8 @@ footer span { margin-right: auto; }
   .project-intro { margin-bottom: 70px; }
   .hero-actions { align-items: flex-start; flex-direction: column; }
   .project-section { padding: 65px 0; }
-  .metric-grid, .split-content, .resource-grid { grid-template-columns: 1fr; }
+  .metric-grid, .split-content, .resource-grid, .people-grid { grid-template-columns: 1fr; }
+  .people-grid { gap: 24px; }
   .metric-grid article { min-height: auto; }
   .metric-grid article + article { border-left: 0; border-top: 1px solid var(--line); }
   .metric-value { margin-bottom: 26px; }
