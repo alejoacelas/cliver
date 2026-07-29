@@ -2,10 +2,10 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { sourceFromItem, TOOL_DEFINITIONS } from "../lib/tools.js";
 
-test("exposes the four public-data tools used by the app", () => {
+test("exposes web search and the four evaluated specialist tools", () => {
   assert.deepEqual(
     TOOL_DEFINITIONS.map((tool) => tool.name),
-    ["search_web", "search_screening_list", "search_epmc", "get_orcid_profile"],
+    ["search_web", "search_screening_list", "search_epmc", "get_orcid_profile", "search_orcid_works"],
   );
 });
 

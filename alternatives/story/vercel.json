@@ -1,13 +1,5 @@
 {
   "version": 2,
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/public/index.html"
-    },
-    {
-      "source": "/styles.css",
-      "destination": "/public/styles.css"
-    }
-  ]
+  "cleanUrls": true,
+  "trailingSlash": false
 }

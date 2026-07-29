@@ -23,14 +23,14 @@
         <h1>Follow a DNA order<br>from <mark>flag</mark> to <ins>evidence</ins>.</h1>
         <p class="hero-copy">
           Cliver searches public records for the facts a human reviewer needs.
-          Open source. Paper-tested. Human-decided.
+          Open source. Research-based. Human-decided.
         </p>
         <div class="hero-actions">
           <a class="button" href="https://cliver.bio/try">Try the tool</a>
           <a class="underlink" href="https://github.com/alejoacelas/ai-kyc-dna-synthesis-frontiers">Paper + data ↗</a>
         </div>
 
-        <section class="order-window" aria-label="Example customer order">
+        <section class="order-window" aria-label="Illustrative fictional customer order">
           <div class="window-bar">
             <span>customer-order / #1048</span>
             <span class="review-pill">needs customer review</span>
@@ -38,13 +38,13 @@
           <div class="order-grid">
             <div>
               <span class="field-label">Customer</span>
-              <strong>Hanna Palya</strong>
-              <small>hanna.palya@warwick.ac.uk</small>
+              <strong>Avery Morgan</strong>
+              <small>avery.morgan@example.org</small>
             </div>
             <div>
               <span class="field-label">Institution</span>
-              <strong>University of Warwick</strong>
-              <small>ORCID 0000-0001-6890-2906</small>
+              <strong>Northbridge Institute</strong>
+              <small>Fictional example</small>
             </div>
             <div>
               <span class="field-label">Order</span>
@@ -102,14 +102,14 @@
 
         <div class="storyboard">
           <article class="panel intake-panel">
-            <div class="panel-bar"><span>01 / customer data</span><span>ready</span></div>
+            <div class="panel-bar"><span>01 / fictional customer data</span><span>ready</span></div>
             <div class="panel-body">
               <p class="mono prompt">Screen this synthetic DNA customer order:</p>
               <dl>
-                <div><dt>Name</dt><dd>Hanna Palya</dd></div>
-                <div><dt>Institution</dt><dd>University of Warwick</dd></div>
-                <div><dt>Email</dt><dd>hanna.palya@warwick.ac.uk</dd></div>
-                <div><dt>ORCID</dt><dd>0000-0001-6890-2906</dd></div>
+                <div><dt>Name</dt><dd>Avery Morgan</dd></div>
+                <div><dt>Institution</dt><dd>Northbridge Institute</dd></div>
+                <div><dt>Email</dt><dd>avery.morgan@example.org</dd></div>
+                <div><dt>Profile</dt><dd>Illustrative, not a real person</dd></div>
                 <div><dt>Order</dt><dd>Bacteriophage-related construct</dd></div>
               </dl>
               <span class="flow-label">A structured claim to verify →</span>
@@ -120,11 +120,11 @@
             <div class="panel-bar"><span>02 / public research</span><span class="running">searching</span></div>
             <div class="panel-body terminal">
               <p><i></i> Search official university directory</p>
-              <p class="result">↳ Affiliation confirmed <b>[web1]</b></p>
-              <p><i></i> Verify warwick.ac.uk ownership</p>
-              <p class="result">↳ Official institutional domain <b>[web2]</b></p>
+              <p class="result">↳ Affiliation evidence collected <b>[web1]</b></p>
+              <p><i></i> Verify institutional domain</p>
+              <p class="result">↳ Domain evidence collected <b>[web2]</b></p>
               <p><i></i> Search U.S. Consolidated Screening List</p>
-              <p class="result">↳ No matching records <b>[screen1]</b></p>
+              <p class="result">↳ Search record: zero matches <b>[screen1]</b></p>
               <p><i></i> Search ORCID + Europe PMC</p>
               <p class="result">↳ Relevant phage work found <b>[epmc1]</b></p>
             </div>
@@ -133,9 +133,9 @@
           <article class="panel report-panel">
             <div class="panel-bar"><span>03 / review report</span><span>4 checks</span></div>
             <div class="panel-body">
-              <div class="finding"><span class="clear">no flag</span><strong>Institutional affiliation</strong><small>Confirmed by university directory [web1]</small></div>
-              <div class="finding"><span class="clear">no flag</span><strong>Email domain</strong><small>Official Warwick domain [web2]</small></div>
-              <div class="finding"><span class="clear">no flag</span><strong>Sanctions screening</strong><small>No matching CSL record [screen1]</small></div>
+              <div class="finding"><span class="clear">no flag</span><strong>Institutional affiliation</strong><small>Illustrative official-directory evidence [web1]</small></div>
+              <div class="finding"><span class="clear">no flag</span><strong>Email domain</strong><small>Illustrative domain evidence [web2]</small></div>
+              <div class="finding"><span class="clear">no flag</span><strong>Sanctions screening</strong><small>Dated CSL search record, zero matches [screen1]</small></div>
               <div class="finding"><span class="info">context</span><strong>Relevant work</strong><small>Customer-authored bacteriophage research [epmc1]</small></div>
               <div class="human-note">
                 <span>Human review</span>
@@ -165,7 +165,7 @@
           <div><strong>$1.18</strong><span>AI-assisted cost</span><small>vs. $14.04 human</small></div>
           <div><strong>$0.23</strong><span>AI research cost</span><small>before human review</small></div>
         </div>
-        <p class="fine-print">41 customer profiles; five information-gathering tasks. The study did not evaluate fulfillment decisions.</p>
+        <p class="fine-print">41 customer profiles; four flag criteria and one background-work task. This storyboard is illustrative; the deployed demo was not evaluated and the study did not evaluate fulfillment decisions.</p>
         <div class="final-links">
           <a class="button inverse" href="https://cliver.bio/try">Try a screening</a>
           <a href="https://github.com/alejoacelas/ai-kyc-dna-synthesis-frontiers">Read the paper, prompts, and data ↗</a>

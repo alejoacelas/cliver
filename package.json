@@ -5,11 +5,18 @@
   "type": "module",
   "license": "Unlicense",
   "scripts": {
+    "build": "esbuild src/app.js --bundle --format=esm --minify --outfile=public/app.js",
     "dev": "vercel dev",
     "test": "node --test",
-    "check": "node --check api/screen.js && node --check lib/openrouter.js && node --check lib/tools.js && node --check public/app.js"
+    "check": "node --check api/screen.js && node --check lib/openrouter.js && node --check lib/tools.js && node --check src/app.js"
+  },
+  "dependencies": {
+    "botid": "^1.5.10"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
   },
   "engines": {
-    "node": ">=20"
+    "node": "24.x"
   }
 }

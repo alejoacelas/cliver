@@ -34,35 +34,44 @@
               <p class="eyebrow">Customer order</p>
               <h2>Who should Cliver screen?</h2>
             </div>
-            <button id="example-button" class="text-button" type="button">Use example</button>
+            <button id="example-button" class="text-button" type="button">Use fictional example</button>
           </div>
 
           <div class="field-grid">
             <label>
               <span>Name <b>required</b></span>
-              <input name="name" type="text" autocomplete="name" required placeholder="Hanna Palya">
+              <input name="name" type="text" autocomplete="name" maxlength="160" required placeholder="Customer name">
             </label>
             <label>
               <span>Institution <b>required</b></span>
-              <input name="institution" type="text" autocomplete="organization" required placeholder="University of Warwick">
+              <input name="institution" type="text" autocomplete="organization" maxlength="240" required placeholder="Institution">
             </label>
             <label>
               <span>Email</span>
-              <input name="email" type="email" autocomplete="email" placeholder="name@institution.edu">
+              <input name="email" type="email" autocomplete="email" maxlength="254" placeholder="name@institution.edu">
             </label>
             <label>
               <span>ORCID</span>
-              <input name="orcid" type="text" inputmode="numeric" placeholder="0000-0001-6890-2906">
+              <input name="orcid" type="text" inputmode="numeric" maxlength="19" placeholder="0000-0000-0000-0000">
             </label>
           </div>
 
           <label>
             <span>Order or intended work</span>
-            <textarea name="order" rows="4" placeholder="Organism, sequence, construct, or intended use"></textarea>
+            <textarea name="order" rows="4" maxlength="2000" placeholder="Organism, sequence, construct, or intended use"></textarea>
+          </label>
+
+          <label class="consent">
+            <input name="consent" type="checkbox" required>
+            <span>
+              Use only public, fictional, or authorized data. Searches send these fields to
+              <a href="https://openrouter.ai/privacy">OpenRouter</a>, <a href="https://tavily.com/privacy">Tavily</a>,
+              and the public databases named above. Cliver does not save submissions.
+            </span>
           </label>
 
           <div class="form-footer">
-            <p>Fresh screenings usually take 1–4 minutes.</p>
+            <p>Fresh screenings stop after four minutes.</p>
             <button id="submit-button" class="primary-button" type="submit">Screen customer</button>
           </div>
         </form>
