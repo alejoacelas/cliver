@@ -6,6 +6,7 @@
   --card: #fffef8;
   --accent: #294e3b;
   --accent-light: #dce8df;
+  --highlight: #f0df66;
   --error: #9f2d20;
   color: var(--ink);
   background: var(--paper);
@@ -31,6 +32,11 @@ footer {
 .site-header { justify-content: space-between; }
 .site-header nav { display: flex; align-items: center; gap: 22px; }
 .wordmark { font-size: 20px; font-weight: 750; letter-spacing: -0.04em; text-decoration: none; }
+.highlight {
+  padding: 0 0.08em;
+  color: inherit;
+  background: linear-gradient(transparent 56%, var(--highlight) 56%);
+}
 .quiet-link { color: var(--muted); font-size: 14px; }
 .header-button {
   padding: 9px 13px;
