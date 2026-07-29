@@ -3,9 +3,9 @@
 
 <!--me-->LLMs can be faster and more comprehensive than humans at searching and processing information.<!--/me--> Cliver lets you try AI-assisted customer screening for synthetic DNA orders.
 
-**[Try Cliver](https://cliver.bio/try)** · <!--me-->**[Final paper](https://github.com/alejoacelas/ai-kyc-dna-synthesis-frontiers)**<!--/me-->
+**[Try Cliver](https://cliver.bio/try)** · <!--me-->**[Final paper](https://doi.org/10.3389/fbioe.2026.1819556)**<!--/me-->
 
-In [our evaluation](https://github.com/alejoacelas/ai-kyc-dna-synthesis-frontiers), the best model matched the human baseline on four flag criteria (90.2% vs. 89.0%) at about one-tenth the cost ($1.18 vs. $14.04 per customer). AI-only information gathering across five tasks averaged $0.23 per customer, about 50 times cheaper than manual screening.
+In [our evaluation](https://doi.org/10.3389/fbioe.2026.1819556), the best model matched the human baseline on four flag criteria (90.2% vs. 89.0%) at about one-tenth the cost ($1.18 vs. $14.04 per customer). AI-only information gathering across five tasks averaged $0.23 per customer, about 50 times cheaper than manual screening.
 
 Cliver adapts the study's [screening](prompts/screening.txt) and [background-work](prompts/background-work.txt) prompts for a public demo with web, ORCID, Europe PMC, and U.S. Consolidated Screening List search. The deployed demo was not part of the evaluation. It returns evidence for a human to review; it does not decide whether to fulfill an order.
 
