@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="See how AI-assisted customer screening works, one order at a time.">
+    <title>Cliver — See customer screening in practice</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header>
+      <a class="wordmark" href="/">cliver.bio</a>
+      <nav>
+        <a href="#walkthrough">How it works</a>
+        <a href="#results">Results</a>
+        <a href="https://github.com/alejoacelas/cliver">Source ↗</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="kicker">Open customer-screening research</p>
+        <h1>Follow a DNA order<br>from <mark>flag</mark> to <ins>evidence</ins>.</h1>
+        <p class="hero-copy">
+          Cliver searches public records for the facts a human reviewer needs.
+          Open source. Paper-tested. Human-decided.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="https://cliver.bio/try">Try the tool</a>
+          <a class="underlink" href="https://github.com/alejoacelas/ai-kyc-dna-synthesis-frontiers">Paper + data ↗</a>
+        </div>
+
+        <section class="order-window" aria-label="Example customer order">
+          <div class="window-bar">
+            <span>customer-order / #1048</span>
+            <span class="review-pill">needs customer review</span>
+          </div>
+          <div class="order-grid">
+            <div>
+              <span class="field-label">Customer</span>
+              <strong>Hanna Palya</strong>
+              <small>hanna.palya@warwick.ac.uk</small>
+            </div>
+            <div>
+              <span class="field-label">Institution</span>
+              <strong>University of Warwick</strong>
+              <small>ORCID 0000-0001-6890-2906</small>
+            </div>
+            <div>
+              <span class="field-label">Order</span>
+              <strong>Synthetic DNA construct</strong>
+              <small>Related to bacteriophage research</small>
+            </div>
+            <div class="route-box">
+              <span>sequence screening</span>
+              <b>→</b>
+              <span>customer screening</span>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="walkthrough" class="walkthrough">
+        <div class="section-intro">
+          <p class="kicker">One order, six scenes</p>
+          <h2>What customer screening looks like.</h2>
+          <p>A sequence match is not a verdict. It starts a review of who the customer is and whether their work fits the order.</p>
+        </div>
+
+        <ol class="scene-list">
+          <li class="scene active">
+            <span>01</span>
+            <h3>An order needs review</h3>
+            <p>Sequence screening routes a potentially sensitive order to a customer reviewer.</p>
+          </li>
+          <li class="scene">
+            <span>02</span>
+            <h3>Start with the claim</h3>
+            <p>Name, institution, email, ORCID, and intended work become the research brief.</p>
+          </li>
+          <li class="scene">
+            <span>03</span>
+            <h3>Verify identity</h3>
+            <p>Cliver checks affiliation, institution type, and whether the email domain belongs to it.</p>
+          </li>
+          <li class="scene">
+            <span>04</span>
+            <h3>Search restrictions</h3>
+            <p>The customer and institution are checked against U.S. sanctions and export-control lists.</p>
+          </li>
+          <li class="scene">
+            <span>05</span>
+            <h3>Find relevant work</h3>
+            <p>Publications and research records show whether prior laboratory work fits the order.</p>
+          </li>
+          <li class="scene">
+            <span>06</span>
+            <h3>A human decides</h3>
+            <p>The reviewer opens the citations, follows up where needed, and retains the fulfillment decision.</p>
+          </li>
+        </ol>
+
+        <div class="storyboard">
+          <article class="panel intake-panel">
+            <div class="panel-bar"><span>01 / customer data</span><span>ready</span></div>
+            <div class="panel-body">
+              <p class="mono prompt">Screen this synthetic DNA customer order:</p>
+              <dl>
+                <div><dt>Name</dt><dd>Hanna Palya</dd></div>
+                <div><dt>Institution</dt><dd>University of Warwick</dd></div>
+                <div><dt>Email</dt><dd>hanna.palya@warwick.ac.uk</dd></div>
+                <div><dt>ORCID</dt><dd>0000-0001-6890-2906</dd></div>
+                <div><dt>Order</dt><dd>Bacteriophage-related construct</dd></div>
+              </dl>
+              <span class="flow-label">A structured claim to verify →</span>
+            </div>
+          </article>
+
+          <article class="panel research-panel">
+            <div class="panel-bar"><span>02 / public research</span><span class="running">searching</span></div>
+            <div class="panel-body terminal">
+              <p><i></i> Search official university directory</p>
+              <p class="result">↳ Affiliation confirmed <b>[web1]</b></p>
+              <p><i></i> Verify warwick.ac.uk ownership</p>
+              <p class="result">↳ Official institutional domain <b>[web2]</b></p>
+              <p><i></i> Search U.S. Consolidated Screening List</p>
+              <p class="result">↳ No matching records <b>[screen1]</b></p>
+              <p><i></i> Search ORCID + Europe PMC</p>
+              <p class="result">↳ Relevant phage work found <b>[epmc1]</b></p>
+            </div>
+          </article>
+
+          <article class="panel report-panel">
+            <div class="panel-bar"><span>03 / review report</span><span>4 checks</span></div>
+            <div class="panel-body">
+              <div class="finding"><span class="clear">no flag</span><strong>Institutional affiliation</strong><small>Confirmed by university directory [web1]</small></div>
+              <div class="finding"><span class="clear">no flag</span><strong>Email domain</strong><small>Official Warwick domain [web2]</small></div>
+              <div class="finding"><span class="clear">no flag</span><strong>Sanctions screening</strong><small>No matching CSL record [screen1]</small></div>
+              <div class="finding"><span class="info">context</span><strong>Relevant work</strong><small>Customer-authored bacteriophage research [epmc1]</small></div>
+              <div class="human-note">
+                <span>Human review</span>
+                <p>Open each source. Ask for clarification if the evidence is incomplete. Decide whether to fulfill outside Cliver.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="boundary">
+        <p class="kicker">The boundary matters</p>
+        <div class="boundary-grid">
+          <h2>Cliver gathers.<br>People decide.</h2>
+          <div>
+            <p>The model does the repetitive public-record search: affiliation, institution, domain, sanctions, and relevant work.</p>
+            <p>The reviewer checks the sources, handles ambiguity, contacts the customer, and owns the order decision.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="results" class="results">
+        <p class="kicker">What we measured</p>
+        <h2>Tested against an expert-human baseline.</h2>
+        <div class="result-grid">
+          <div><strong>90.2%</strong><span>AI flag accuracy</span><small>vs. 89.0% human</small></div>
+          <div><strong>$1.18</strong><span>AI-assisted cost</span><small>vs. $14.04 human</small></div>
+          <div><strong>$0.23</strong><span>AI research cost</span><small>before human review</small></div>
+        </div>
+        <p class="fine-print">41 customer profiles; five information-gathering tasks. The study did not evaluate fulfillment decisions.</p>
+        <div class="final-links">
+          <a class="button inverse" href="https://cliver.bio/try">Try a screening</a>
+          <a href="https://github.com/alejoacelas/ai-kyc-dna-synthesis-frontiers">Read the paper, prompts, and data ↗</a>
+          <a href="https://github.com/alejoacelas/cliver">Inspect the tool source ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Cliver · open research + public-domain software</span>
+      <a href="https://cliver.bio/try">Tool</a>
+      <a href="https://github.com/alejoacelas/cliver">GitHub ↗</a>
+    </footer>
+  </body>
+</html>

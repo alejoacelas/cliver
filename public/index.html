@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Open research and software for AI-assisted customer screening of synthetic DNA orders.">
+    <meta property="og:title" content="Cliver — AI-assisted customer screening">
+    <meta property="og:description" content="Open research, prompts, data, and software for synthetic DNA customer screening.">
+    <meta property="og:image" content="https://cliver.bio/og.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Cliver — Open AI customer-screening research</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="/">Cliver</a>
+      <nav>
+        <a class="quiet-link" href="#results">Results</a>
+        <a class="quiet-link" href="https://github.com/alejoacelas/ai-kyc-dna-synthesis-frontiers">Paper ↗</a>
+        <a class="header-button" href="/try">Try Cliver</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro project-intro">
+        <p class="eyebrow">Open research + software</p>
+        <h1>AI can make customer screening cheaper.</h1>
+        <p class="lede">
+          We tested five AI models on customer screening for synthetic DNA orders.
+          The best matched expert-human flag accuracy on the five tasks studied at
+          about one-tenth the cost. We published the data, prompts, and a tool you can try.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-link" href="/try">Try the screening tool</a>
+          <a class="secondary-link" href="https://github.com/alejoacelas/ai-kyc-dna-synthesis-frontiers">Read the paper and data ↗</a>
+        </div>
+      </section>
+
+      <section id="results" class="project-section">
+        <div class="section-heading">
+          <p class="eyebrow">Results</p>
+          <h2>Comparable accuracy. Lower cost.</h2>
+          <p>Gemini 2.5 Pro with web, bibliographic, and sanctions tools was the strongest system in our 41-profile comparison.</p>
+        </div>
+        <div class="metric-grid">
+          <article>
+            <span class="metric-value">90.2%</span>
+            <h3>AI flag accuracy</h3>
+            <p>Statistically indistinguishable from the 89.0% expert-human baseline.</p>
+          </article>
+          <article>
+            <span class="metric-value">$1.18</span>
+            <h3>AI-assisted cost</h3>
+            <p>Per customer, compared with $14.04 for manual screening.</p>
+          </article>
+          <article>
+            <span class="metric-value">$0.23</span>
+            <h3>Information gathering</h3>
+            <p>Average AI cost before human review, about 50 times cheaper than manual screening.</p>
+          </article>
+        </div>
+        <p class="scope-note">
+          The study evaluated information gathering, source quality, source fidelity, and flags—not fulfillment decisions.
+          Human reviewers retained authority over follow-up and fulfillment.
+        </p>
+      </section>
+
+      <section class="project-section split-section">
+        <div class="section-heading">
+          <p class="eyebrow">Try it</p>
+          <h2>The experiment, as a small web app.</h2>
+        </div>
+        <div class="split-content">
+          <div>
+            <p>
+              Enter a customer's name and institution. Cliver runs the paper's screening and
+              background-work prompts, searches public records, and returns cited evidence for review.
+            </p>
+            <a class="primary-link" href="/try">Open the tool</a>
+          </div>
+          <ol class="step-list">
+            <li><span>01</span>Verify affiliation, institution, and email domain.</li>
+            <li><span>02</span>Search U.S. sanctions and export-control lists.</li>
+            <li><span>03</span>Find relevant publications and laboratory work.</li>
+            <li><span>04</span>Review the evidence and source links yourself.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="project-section open-section">
+        <div class="section-heading">
+          <p class="eyebrow">Open by default</p>
+          <h2>Inspect or reuse every part.</h2>
+        </div>
+        <div class="resource-grid">
+          <a href="https://github.com/alejoacelas/ai-kyc-dna-synthesis-frontiers">
+            <span>Paper + data</span>
+            <strong>Methods, evaluations, figures, and anonymized results ↗</strong>
+          </a>
+          <a href="https://github.com/alejoacelas/cliver">
+            <span>Tool source</span>
+            <strong>The prompts, public-data tools, API, and interface ↗</strong>
+          </a>
+          <a href="https://github.com/alejoacelas/cliver/tree/main/prompts">
+            <span>Prompts</span>
+            <strong>The screening and background-work instructions ↗</strong>
+          </a>
+        </div>
+      </section>
+
+      <section class="closing-section">
+        <p class="eyebrow">Run a screening</p>
+        <h2>See what the model finds.</h2>
+        <a class="primary-link" href="/try">Try Cliver</a>
+      </section>
+    </main>
+
+    <footer>
+      <span>Cliver is open research and public-domain software.</span>
+      <a href="/try">Tool</a>
+      <a href="https://github.com/alejoacelas/cliver">Source ↗</a>
+      <a href="https://github.com/alejoacelas/ai-kyc-dna-synthesis-frontiers">Paper + data ↗</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "cliver",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "Unlicense",
+  "scripts": {
+    "dev": "vercel dev",
+    "test": "node --test",
+    "check": "node --check api/screen.js && node --check lib/openrouter.js && node --check lib/tools.js && node --check public/app.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

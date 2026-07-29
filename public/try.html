@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Try AI-assisted customer screening for synthetic DNA orders.">
+    <title>Try Cliver — AI-assisted customer screening</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="/">Cliver</a>
+      <nav>
+        <a class="quiet-link" href="/">Project</a>
+        <a class="quiet-link" href="https://github.com/alejoacelas/cliver">Source ↗</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro try-intro">
+        <p class="eyebrow">AI-assisted customer screening</p>
+        <h1>Gather the evidence.<br>Keep the decision human.</h1>
+        <p class="lede">
+          Cliver applies the prompts from
+          <a href="https://github.com/alejoacelas/ai-kyc-dna-synthesis-frontiers">our evaluation</a>
+          to public web, bibliographic, ORCID, and sanctions records.
+        </p>
+      </section>
+
+      <section class="workspace">
+        <form id="screen-form" class="screen-form">
+          <div class="form-heading">
+            <div>
+              <p class="eyebrow">Customer order</p>
+              <h2>Who should Cliver screen?</h2>
+            </div>
+            <button id="example-button" class="text-button" type="button">Use example</button>
+          </div>
+
+          <div class="field-grid">
+            <label>
+              <span>Name <b>required</b></span>
+              <input name="name" type="text" autocomplete="name" required placeholder="Hanna Palya">
+            </label>
+            <label>
+              <span>Institution <b>required</b></span>
+              <input name="institution" type="text" autocomplete="organization" required placeholder="University of Warwick">
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" autocomplete="email" placeholder="name@institution.edu">
+            </label>
+            <label>
+              <span>ORCID</span>
+              <input name="orcid" type="text" inputmode="numeric" placeholder="0000-0001-6890-2906">
+            </label>
+          </div>
+
+          <label>
+            <span>Order or intended work</span>
+            <textarea name="order" rows="4" placeholder="Organism, sequence, construct, or intended use"></textarea>
+          </label>
+
+          <div class="form-footer">
+            <p>Fresh screenings usually take 1–4 minutes.</p>
+            <button id="submit-button" class="primary-button" type="submit">Screen customer</button>
+          </div>
+        </form>
+
+        <div id="status" class="status" hidden aria-live="polite">
+          <span class="spinner"></span>
+          <div>
+            <strong>Researching public records</strong>
+            <p>Checking affiliation, institution, email, sanctions, and relevant work · <span id="elapsed">0:00</span></p>
+          </div>
+        </div>
+
+        <section id="results" class="results" hidden>
+          <div class="results-heading">
+            <div>
+              <p class="eyebrow">Screening report</p>
+              <h2>Evidence for human review</h2>
+            </div>
+            <span id="duration" class="duration"></span>
+          </div>
+
+          <article class="report-card">
+            <div class="report-heading">
+              <div>
+                <span class="report-number">01</span>
+                <h3>Verification</h3>
+              </div>
+              <button class="copy-button" data-copy="screening" type="button">Copy markdown</button>
+            </div>
+            <div id="screening-report" class="markdown"></div>
+            <details id="screening-sources">
+              <summary>Sources searched</summary>
+              <ol></ol>
+            </details>
+          </article>
+
+          <article class="report-card">
+            <div class="report-heading">
+              <div>
+                <span class="report-number">02</span>
+                <h3>Relevant background work</h3>
+              </div>
+              <button class="copy-button" data-copy="backgroundWork" type="button">Copy markdown</button>
+            </div>
+            <div id="work-report" class="markdown"></div>
+            <details id="work-sources">
+              <summary>Sources searched</summary>
+              <ol></ol>
+            </details>
+          </article>
+
+          <p class="review-note">
+            Cliver gathers public evidence. A qualified reviewer should verify sources,
+            contact the customer where needed, and retain authority over fulfillment.
+          </p>
+        </section>
+
+        <div id="error" class="error" hidden role="alert"></div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Public-domain code.</span>
+      <a href="/">Project</a>
+      <a href="https://github.com/alejoacelas/cliver">GitHub ↗</a>
+      <a href="https://github.com/alejoacelas/ai-kyc-dna-synthesis-frontiers">Study ↗</a>
+    </footer>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
