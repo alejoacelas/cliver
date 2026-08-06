@@ -1,13 +1,9 @@
----
-human_edit_tracking:
-  enabled: true
-  history: []
----
+<!--ai-->
 # Cliver
 
-LLMs can be faster and more comprehensive than humans at searching and processing information. Cliver lets you try AI-assisted customer screening for synthetic DNA orders.
+<!--me-->LLMs can be faster and more comprehensive than humans at searching and processing information.<!--/me--> Cliver lets you try AI-assisted customer screening for synthetic DNA orders.
 
-**[Try Cliver](https://cliver.bio/try)** · **[Final paper](https://doi.org/10.3389/fbioe.2026.1819556)**
+**[Try Cliver](https://cliver.bio/try)** · <!--me-->**[Final paper](https://doi.org/10.3389/fbioe.2026.1819556)**<!--/me-->
 
 In [our evaluation](https://doi.org/10.3389/fbioe.2026.1819556), the best model matched the human baseline on four flag criteria (90.2% vs. 89.0%) at about one-tenth the cost ($1.18 vs. $14.04 per customer). AI-only information gathering across five tasks averaged $0.23 per customer, about 50 times cheaper than manual screening.
 
@@ -37,3 +33,4 @@ The implementation is a static page and one Vercel function:
 - [`prompts/`](prompts/) — prompts tested in the paper
 
 Released into the public domain under [The Unlicense](LICENSE).
+<!--/ai-->
