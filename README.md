@@ -1,8 +1,3 @@
----
-human_edit_tracking:
-  enabled: true
-  history: []
----
 # Cliver
 
 LLMs can be faster and more comprehensive than humans at searching and processing information. Cliver lets you try AI-assisted customer screening for synthetic DNA orders.
