@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { formatCustomer, validateCustomer } from "../api/screen.js";
-import { citationWarnings } from "../lib/openrouter.js";
+import { citationWarnings } from "../lib/anthropic.js";
 
 const valid = {
   name: "Avery Morgan",

@@ -1,5 +1,5 @@
 import { fillPrompt, PROMPTS } from "../lib/prompts.js";
-import { runPrompt } from "../lib/openrouter.js";
+import { runPrompt } from "../lib/anthropic.js";
 import { checkBotId } from "botid/server";
 
 export const maxDuration = 300;

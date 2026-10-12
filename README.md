@@ -16,7 +16,7 @@ cp .env.example .env.local
 npm run dev
 ```
 
-The app needs OpenRouter and Tavily keys. A free [Consolidated Screening List API key](https://developer.trade.gov/) enables sanctions checks.
+The app needs Anthropic and Tavily keys. A free [Consolidated Screening List API key](https://developer.trade.gov/) enables sanctions checks.
 
 ```sh
 npm test
@@ -27,7 +27,7 @@ The implementation is a static page and one Vercel function:
 
 - [`public/`](public/) — form and report viewer
 - [`api/screen.js`](api/screen.js) — request validation and parallel prompt runs
-- [`lib/openrouter.js`](lib/openrouter.js) — model tool loop
+- [`lib/anthropic.js`](lib/anthropic.js) — model tool loop
 - [`lib/tools.js`](lib/tools.js) — public-data searches
 - [`prompts/`](prompts/) — prompts tested in the paper
 

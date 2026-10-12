@@ -8,7 +8,7 @@
     "build": "esbuild src/app.js --bundle --format=esm --minify --outfile=public/app.js",
     "dev": "vercel dev",
     "test": "node --test",
-    "check": "node --check api/screen.js && node --check lib/openrouter.js && node --check lib/tools.js && node --check src/app.js"
+    "check": "node --check api/screen.js && node --check lib/anthropic.js && node --check lib/tools.js && node --check src/app.js"
   },
   "dependencies": {
     "botid": "^1.5.10"
